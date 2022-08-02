@@ -6,7 +6,7 @@ altura = float(input("Ingrese su altura en mt (Ejemplo: 1.70): "))
 
 #Formula del IMC
 def formulaIMC(peso, altura):
-    imc = peso / (altura * altura)
+    imc = peso // (altura ** 2)
     return imc
 
 imc = formulaIMC(peso, altura)
